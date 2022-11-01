@@ -47,14 +47,35 @@ h2 {
 	font-weight: 700;
 }
 
+article {
+	padding: 0 20px;
+} 
+
+/* --- Header --- */
+
 header {
 	text-align: center;
 	color: white;
-	background-color: black;
 	background-image: url(images/island-hlavicka.jpg);
 	background-position: center;
 	background-size: cover;
 	padding: 35px;
+	position: relative;
+}
+
+header::before {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+header h1,
+header p {
+	position: relative;
 }
 
 header article {
@@ -70,12 +91,10 @@ footer {
 
 .author {
 	font-style: italic;
-	color: #f5f5f5;
+	color: lightgray;
 }
 
-article {
-	padding: 0 20px;
-}
+
 
 .author::before {
 	content: "";
@@ -86,7 +105,19 @@ article {
 	margin: 0 40%;
 }
 
+/* --- obrázky v contentu --- */
+
+.image {
+	position: relative;
+}
+
 .image img {
 	max-width: 100%;
 	height: auto;
+}
+
+/* --- Gallery ---- */
+
+.foto img {
+	width: 100%;
 }
