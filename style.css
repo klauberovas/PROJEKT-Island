@@ -32,12 +32,12 @@ body {
 	max-width: 540px;
 }
 
-h1 {
+.major {
 	font-size: 48px;
 	margin: 0;
 }
 
-h2::after {
+.minor::after {
 	content: "";
 	display: block;
 	width: 80px;
@@ -48,8 +48,7 @@ h2::after {
 }
 
 nav a, 
-h1,
-h2 {
+.title {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 }
@@ -102,7 +101,7 @@ header::before {
 /* --- author + header togehther properties--- */
 
 header,
-header h1,
+header .major,
 header p, 
 .author,
 .author::before{
@@ -127,13 +126,13 @@ nav {
 	text-align: center;
 }
 
- nav li {
+nav li {
 	list-style-type: none;
 	border-bottom: 2px solid #E8E8E8;
 	padding: 5px 0;
  }
 
- nav a {
+nav a {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #909090;
