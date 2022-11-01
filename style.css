@@ -14,8 +14,10 @@ html { box-sizing: border-box; }
 	Oba fonty jsou dostupné na Google Fonts.
 */
 :root {
-	--seda: ;
-	--tmava: ;
+	--svetla:#f5f5f5 ;
+	--seda: #D3D3D3; 
+	--svetlounka: #E8E8E8;
+	--tmava: #909090 ;
 	--modra:#629fe0 ;
 	
 }
@@ -85,7 +87,7 @@ header::before {
 
 .author {
 	font-style: italic;
-	color: lightgray;
+	color: #D3D3D3;
 }
 
 .author::before {
@@ -93,7 +95,7 @@ header::before {
 	display: block;
 	width: 100px;
 	height: 2px;
-	background-color: lightgray;
+	background-color: #D3D3D3;
 	margin: 0 40%;
 }
 
