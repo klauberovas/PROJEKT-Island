@@ -14,11 +14,79 @@ html { box-sizing: border-box; }
 	Oba fonty jsou dostupné na Google Fonts.
 */
 
+
 body {
 	margin: 0;
 	padding: 0;
 	background-color: #f5f5f5;
 	font-size: 16px;
 	line-height: 1.6;
+	font-family: 'Merriweather', serif;
+	max-width: 540px;
 }
 
+h1 {
+	font-size: 48px;
+	margin: 0;
+}
+
+h2::after {
+	content: "";
+	display: block;
+	width: 80px;
+	height: 4px;
+	background-color: #629fe0;
+	margin-left: -20px;
+	margin-top: 20px;
+}
+
+nav, 
+h1,
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+header {
+	text-align: center;
+	color: white;
+	background-color: black;
+	background-image: url(images/island-hlavicka.jpg);
+	background-position: center;
+	background-size: cover;
+	padding: 35px;
+}
+
+header article {
+	padding: 0;
+}
+
+header, 
+content, 
+footer {
+	max-width: 540px;
+	margin: 0 auto;
+}
+
+.author {
+	font-style: italic;
+	color: #f5f5f5;
+}
+
+article {
+	padding: 0 20px;
+}
+
+.author::before {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 2px;
+	background-color: white;
+	margin: 0 40%;
+}
+
+.image img {
+	max-width: 100%;
+	height: auto;
+}
