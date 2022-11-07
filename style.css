@@ -197,8 +197,13 @@ nav a {
 	.image .creator {
 		text-align: left;
 		position: absolute;
-		bottom: 50px;
-		right: 15px;
+		bottom: 12px;
+		right: 12px;
+		color: var(--seda);
+	}
+
+	.image .creator__link{
+		color: var(--seda);
 	}
 }
 
@@ -207,8 +212,23 @@ nav a {
 	text-align: center;
 }
 
+@media screen and (min-width:541px) {
+	.gallery {
+		margin-bottom: 0;
+	}
+	.gallery__foto {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
 .foto img {
 	width: 100%;
+}
+@media screen and (min-width:541px) {
+	.foto img {
+		display: block;
+	}
 }
 
 .name {
@@ -219,7 +239,15 @@ nav a {
 	margin-top: 0;
 	margin-bottom: 20px;
 }
-
+@media screen and (min-width: 541px) {
+	.foto p {
+		margin: 0;
+		}
+	.foto p, 
+	.name {
+		display: none;
+	}
+}
 .foto a {
 	margin: 0;
 }
