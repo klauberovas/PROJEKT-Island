@@ -306,16 +306,16 @@ nav a {
 @media screen and (min-width: 541px) {
 	.foto {
 		position: relative;
-		overflow: hidden ;
+		overflow: hidden ; 
 	}
-	
+
 	.gallery {
-			margin-bottom: 0;
+		margin-bottom: 0;
 		}
 	
 	.gallery__foto {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.foto__description {
