@@ -47,6 +47,12 @@ section {
 	margin: 40px 0;
 }
 
+@media screen and (min-width: 960px) {
+	.intro {
+		margin-bottom: 0;
+	}
+}
+
 /* --- Header --- */
 
 header {
@@ -57,6 +63,7 @@ header {
 	background-size: cover;
 	padding: 35px;
 }
+
 
 header::before {
 	content: "";
@@ -72,6 +79,13 @@ header::before {
 	font-size: 48px;
 	margin: 0;
 }
+
+@media screen and (min-width: 960px) {
+	.major {
+		font-size: 85px;
+	}
+}
+
 
 /* --- autor --- */
 
@@ -112,14 +126,37 @@ footer {
 
 @media screen and (min-width: 541px){
 	header,
-	content,
+	.content,
 	footer {
 		max-width: 960px;
 		margin: 0 auto;
 		}
 }
+@media screen and (min-width: 960px) {
+	header {
+		max-width: 100%;
+		margin: 0;
+		z-index: -1;
+		padding: 80px 0 100px 0;
+	}
+	.content {
+		background-color: white;
+		box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.6);
+		margin-top: -60px;
+		z-index: 1;					
+	}
+	header article {
+		max-width: 680px;
+		margin: auto;
+	}
+}
 
-/* --- minor title line ---- */
+/* --- minor + title line ---- */
+@media screen and (min-width: 960px) {
+		.minor {
+		font-size: 36px;
+	}	
+}
 
 .minor::after {
 	content: "";
@@ -132,22 +169,39 @@ footer {
 }
  
 /* --- MENU --- */
+@media screen and (min-width: 960px) {
+	.menu-intro--pc {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+}
 
 nav {
 	text-align: center;
 }
+
 
 nav ul {
 	padding: 0 40px;
 	font-size: 12px;
 }
 
- @media screen and (min-width:541px) {
-		nav ul {
-			margin: 20px;
-			display: flex;
-		}
-}		
+@media screen and (min-width:541px) {
+	nav ul {
+		margin: 20px;
+		display: flex;
+		text-align: left;
+		font-size: 14px;
+	}
+}	
+
+@media screen and (min-width: 960px) {
+	nav ul {
+		display: block;
+		margin: 60px 0 0 0;
+		
+	}
+}
 
 nav li {
 	list-style-type: none;
@@ -157,14 +211,20 @@ nav li {
 
 @media screen and (min-width:541px) {
 	nav li{
-			border-top: 1px solid var(--svetlounka);
-			flex: 0 0 25%;
+		border-top: 1px solid var(--svetlounka);
+		flex: 0 0 25%;
 
 		}
 
 		li + li {
-			border-left: 1px solid var(--svetlounka);
+		border-left: 1px solid var(--svetlounka);
 		}
+}
+@media screen and (min-width: 960px) {
+	nav li {
+		border-top: none;
+		border-left: none;
+	}
 }
 
 nav a {
@@ -206,6 +266,17 @@ nav a {
 		color: var(--seda);
 	}
 }
+
+/*--- text padding ---*/
+@media screen and (min-width: 960px) {
+	.why article {
+		padding-right: 200px;
+	}
+	.what article{
+		padding-left: 200px ;
+	}
+}
+
 
 /* --- Gallery ---- */
 .foto {
